@@ -10,8 +10,17 @@ python = "^3.11"
 fastapi = "^0.108.0"
 uvicorn = "^0.25.0"
 sqlalchemy = "^2.0.25"
-alembic = "^1.13.1"
-psycopg2 = "^2.9.9"
+psycopg2-binary = "^2.9.9"
+pydantic = {extras = ["email"], version = "^2.5.3"}
+python-jose = "^3.3.0"
+passlib = "^1.7.4"
+libgravatar = "^1.0.4"
+python-multipart = "^0.0.6"
+fastapi-mail = "^1.4.1"
+redis = "^5.0.1"
+python-dotenv = "^1.0.0"
+fastapi-limiter = "^0.1.6"
+cloudinary = "^1.37.0"
 
 
 [build-system]

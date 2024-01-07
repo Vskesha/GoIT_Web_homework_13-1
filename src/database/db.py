@@ -3,7 +3,9 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.exc import SQLAlchemyError
 
-DB_URI = "postgresql+psycopg2://postgres:567234@localhost:5432/hw12_db"
+from src.conf.config import settings
+
+DB_URI = settings.sqlalchemy_database_url
 engine = create_engine(DB_URI)
 
 DBSession = sessionmaker(autocommit=False, autoflush=False, bind=engine)
